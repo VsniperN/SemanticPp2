@@ -1,0 +1,42 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/schema/> .
+
+ex:Character1 a ex:GameCharacter ;
+    ex:appearsIn <https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> ;
+    ex:name "Майор Дегтярьов" ;
+    ex:role "Протагоніст" .
+
+ex:Detector a ex:GameItem ;
+    ex:description "Інструмент для виявлення аномалій у зоні відчуження." ;
+    ex:name "Детектор" ;
+    ex:usedIn <https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> .
+
+ex:GSCGameWorld a ex:Developer ;
+    dc:description "Українська студія, що розробляє S.T.A.L.K.E.R. 2." ;
+    dc:title "GSC Game World" .
+
+ex:GameMap a ex:GameMap ;
+    ex:name "Зона відчуження" ;
+    ex:size "5km x 5km" ;
+    ex:usedIn <https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> .
+
+ex:Paragraph1 a ex:Paragraph ;
+    ex:content "Гравці досліджують зону відчуження, збирають артефакти та борються з аномаліями." .
+
+ex:Section1 a ex:Section ;
+    ex:hasParagraph ex:Paragraph1 ;
+    ex:title "Геймплей" .
+
+ex:Steam a ex:Platform ;
+    dc:description "Популярна онлайн-платформа для розповсюдження ігор." ;
+    dc:title "Steam" .
+
+<https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> a ex:Article ;
+    ex:availableOn ex:Steam ;
+    ex:developedBy ex:GSCGameWorld ;
+    ex:hasSection ex:Section1 ;
+    dc:creator "Wikipedia Contributors" ;
+    dc:date "2024-12-25" ;
+    dc:description "Майбутня відеогра в жанрі шутер від першої особи." ;
+    dc:title "S.T.A.L.K.E.R. 2: Серце Чорнобиля" .
+

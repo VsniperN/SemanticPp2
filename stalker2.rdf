@@ -1,0 +1,34 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/schema/> .
+
+ex:GSCGameWorld a ex:Developer ;
+    dc:description "Українська студія, розробник серії S.T.A.L.K.E.R." ;
+    dc:title "GSC Game World" .
+
+ex:Singleplayer a ex:GameMode ;
+    dc:description "Режим гри для одного гравця." ;
+    dc:title "Singleplayer" .
+
+ex:Steam a ex:Platform ;
+    dc:description "Онлайн-платформа для розповсюдження ігор." ;
+    dc:title "Steam" .
+
+ex:Survival a ex:Genre ;
+    dc:description "Жанр відеоігор, зосереджений на виживанні персонажів." ;
+    dc:title "Survival" .
+
+<https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> a ex:Article ;
+    ex:hasSection ex:Section1 ;
+    dc:creator "Wikipedia Contributors" ;
+    dc:date "2024-12-25" ;
+    dc:description "S.T.A.L.K.E.R. 2 — це майбутня відеогра в жанрі шутер від першої особи." ;
+    dc:subject "Відеогра, Шутер, Survival, Постапокаліпсис" ;
+    dc:title "S.T.A.L.K.E.R. 2: Серце Чорнобиля" .
+
+ex:Paragraph1 a ex:Paragraph ;
+    ex:content "Гравці досліджують Зону відчуження, борються з аномаліями і збирають артефакти." .
+
+ex:Section1 a ex:Section ;
+    ex:hasParagraph ex:Paragraph1 ;
+    ex:title "Геймплей" .
+

@@ -1,0 +1,60 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/schema/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Tool a rdfs:Class ;
+    dc:description "Інструмент, використовуваний у грі для різних завдань." ;
+    dc:title "Tool" ;
+    rdfs:subClassOf ex:GameItem .
+
+ex:Artifact a ex:GameItem ;
+    ex:description "Унікальний об'єкт, який можна знайти в зоні відчуження." ;
+    ex:name "Артефакт" ;
+    ex:usedIn <https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> .
+
+ex:Character1 a ex:GameCharacter ;
+    ex:appearsIn <https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> ;
+    ex:name "Майор Дегтярьов" ;
+    ex:role "Протагоніст" .
+
+ex:Detector a ex:Tool ;
+    ex:description "Пристрій для виявлення аномалій." ;
+    ex:name "Детектор" ;
+    ex:usedIn <https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> .
+
+ex:GSCGameWorld a ex:Developer ;
+    dc:description "Розробник відеоігор серії S.T.A.L.K.E.R." ;
+    dc:title "GSC Game World" .
+
+ex:Singleplayer a ex:GameMode ;
+    dc:description "Режим гри для одного гравця." ;
+    dc:title "Singleplayer" .
+
+ex:Steam a ex:Platform ;
+    dc:description "Онлайн-платформа для розповсюдження ігор." ;
+    dc:title "Steam" .
+
+ex:Survival a ex:Genre ;
+    dc:description "Жанр відеоігор, зосереджений на виживанні." ;
+    dc:title "Survival" .
+
+ex:GameMap a ex:GameMap ;
+    ex:name "Зона Відчуження" ;
+    ex:size "5km x 5km" ;
+    ex:usedIn <https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> .
+
+ex:Paragraph1 a ex:Paragraph ;
+    ex:content "Гравці досліджують зону відчуження, борються з аномаліями, збирають артефакти." .
+
+ex:Section1 a ex:Section ;
+    ex:hasParagraph ex:Paragraph1 ;
+    ex:title "Геймплей" .
+
+<https://uk.wikipedia.org/wiki/S.T.A.L.K.E.R._2:_Серце_Чорнобиля#STALKER2> a ex:Article ;
+    ex:hasSection ex:Section1 ;
+    dc:creator "Wikipedia Contributors" ;
+    dc:date "2024-12-25" ;
+    dc:description "Майбутня відеогра в жанрі шутер від першої особи." ;
+    dc:subject "Відеогра, Шутер, Постапокаліпсис" ;
+    dc:title "S.T.A.L.K.E.R. 2: Серце Чорнобиля" .
+
